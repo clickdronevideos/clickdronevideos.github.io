@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+body{margin:0;background:#0b0d0e;color:#e8ebea;font-family:'Archivo',Helvetica,sans-serif;-webkit-font-smoothing:antialiased}
+a{color:#e8ebea;text-decoration:none}
+a:hover{color:oklch(0.86 0.17 128)}
+input::placeholder{color:rgba(232,235,234,.4)}
+</style>
+</helmet>
+<div style="min-height:100vh;display:flex;flex-direction:column;background:#0b0d0e;background-image:linear-gradient(rgba(232,235,234,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(232,235,234,.035) 1px,transparent 1px);background-size:64px 64px">
+
+  <header style="display:flex;justify-content:space-between;align-items:center;gap:16px;padding:24px clamp(20px,4vw,56px)">
+    <a href="Portfolio Click Drone.dc.html" style="display:flex;align-items:center"><img src="logo-click-drone.png" alt="Click Drone Videos" style="height:clamp(40px,5vw,56px);width:auto;display:block"></a>
+    <a href="Portfolio Click Drone.dc.html" style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.12em">← PORTFÓLIO</a>
+  </header>
+
+  <main data-screen-label="Inscrição" style="flex:1;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:clamp(40px,6vw,96px);align-items:start;padding:clamp(32px,6vw,80px) clamp(20px,5vw,80px) clamp(64px,8vw,120px)">
+
+    <div style="display:grid;gap:36px">
+      <div style="display:grid;gap:18px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:13px;letter-spacing:.16em;color:oklch(0.86 0.17 128)">IMERSÃO DE DRONE · VAGAS LIMITADAS</span>
+        <h1 style="margin:0;font-size:clamp(40px,6.5vw,92px);line-height:.94;font-weight:800;letter-spacing:-.03em;max-width:12ch;text-wrap:balance">Garanta sua vaga.</h1>
+        <p style="margin:0;max-width:46ch;font-size:clamp(16px,1.4vw,19px);line-height:1.5;color:rgba(232,235,234,.85);text-wrap:pretty">Preencha o formulário e entraremos em contato para confirmar sua inscrição.</p>
+      </div>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));border-top:1px solid rgba(232,235,234,.15);border-left:1px solid rgba(232,235,234,.15)">
+        <div style="padding:20px 22px;border-right:1px solid rgba(232,235,234,.15);border-bottom:1px solid rgba(232,235,234,.15);display:grid;gap:8px;background:rgba(11,13,14,.6)">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;color:rgba(232,235,234,.6)">DATA</span>
+          <span style="font-size:22px;font-weight:800">{{ date }}</span>
+        </div>
+        <div style="padding:20px 22px;border-right:1px solid rgba(232,235,234,.15);border-bottom:1px solid rgba(232,235,234,.15);display:grid;gap:8px;background:rgba(11,13,14,.6)">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;color:rgba(232,235,234,.6)">HORÁRIO</span>
+          <span style="font-size:22px;font-weight:800">{{ time }}</span>
+        </div>
+        <div style="padding:20px 22px;border-right:1px solid rgba(232,235,234,.15);border-bottom:1px solid rgba(232,235,234,.15);display:grid;gap:8px;background:rgba(11,13,14,.6)">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;color:rgba(232,235,234,.6)">LOCAL</span>
+          <span style="font-size:22px;font-weight:800">{{ place }}</span>
+        </div>
+      </div>
+
+      <div style="display:grid;gap:16px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.16em;color:oklch(0.86 0.17 128)">CONTEÚDO</span>
+        <div style="display:grid;border-top:1px solid rgba(232,235,234,.15)">
+          <div style="display:flex;gap:20px;padding:16px 0;border-bottom:1px solid rgba(232,235,234,.15)"><span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:oklch(0.86 0.17 128)">01</span><span style="font-size:17px;font-weight:500">Regras e segurança de voo</span></div>
+          <div style="display:flex;gap:20px;padding:16px 0;border-bottom:1px solid rgba(232,235,234,.15)"><span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:oklch(0.86 0.17 128)">02</span><span style="font-size:17px;font-weight:500">Primeiros voos e comandos</span></div>
+          <div style="display:flex;gap:20px;padding:16px 0;border-bottom:1px solid rgba(232,235,234,.15)"><span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:oklch(0.86 0.17 128)">03</span><span style="font-size:17px;font-weight:500">Câmera e movimentos cinematográficos</span></div>
+          <div style="display:flex;gap:20px;padding:16px 0;border-bottom:1px solid rgba(232,235,234,.15)"><span style="font-family:'IBM Plex Mono',monospace;font-size:13px;color:oklch(0.86 0.17 128)">04</span><span style="font-size:17px;font-weight:500">Como vender seus serviços</span></div>
+        </div>
+      </div>
+    </div>
+
+    <div style="background:#121516;border:1px solid rgba(232,235,234,.15);padding:clamp(24px,3vw,40px)">
+      <sc-if value="{{ sent }}" hint-placeholder-val="{{ false }}">
+        <div style="display:grid;gap:18px;padding:24px 0">
+          <div style="width:44px;height:44px;border:2px solid oklch(0.86 0.17 128);transform:rotate(45deg)"></div>
+          <h2 style="margin:0;font-size:32px;font-weight:800;letter-spacing:-.02em">Inscrição enviada, {{ firstName }}!</h2>
+          <p style="margin:0;font-size:16px;line-height:1.55;color:rgba(232,235,234,.8);text-wrap:pretty">{{ sentMsg }}</p>
+          <div style="display:flex;flex-wrap:wrap;gap:12px">
+            <button onClick="{{ reset }}" style="cursor:pointer;padding:14px 20px;background:transparent;color:#e8ebea;border:1px solid rgba(232,235,234,.35);font-family:inherit;font-weight:700;font-size:14px">Nova inscrição</button>
+          </div>
+        </div>
+      </sc-if>
+      <sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
+        <form onSubmit="{{ submit }}" noValidate="true" style="display:grid;gap:20px">
+          <h2 style="margin:0;font-size:26px;font-weight:800;letter-spacing:-.01em">Formulário de inscrição</h2>
+          <label style="display:grid;gap:8px">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;color:rgba(232,235,234,.7)">NOME COMPLETO</span>
+            <input value="{{ name }}" onChange="{{ setName }}" autoComplete="name" placeholder="Seu nome" style="height:52px;padding:0 16px;background:#0b0d0e;color:#e8ebea;border:1px solid rgba(232,235,234,.2);font-family:inherit;font-size:16px;outline:none" style-focus="border-color:oklch(0.86 0.17 128)">
+          </label>
+          <label style="display:grid;gap:8px">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;color:rgba(232,235,234,.7)">WHATSAPP</span>
+            <input value="{{ phone }}" onChange="{{ setPhone }}" type="tel" inputMode="tel" autoComplete="tel" placeholder="(11) 90000-0000" style="height:52px;padding:0 16px;background:#0b0d0e;color:#e8ebea;border:1px solid rgba(232,235,234,.2);font-family:inherit;font-size:16px;outline:none" style-focus="border-color:oklch(0.86 0.17 128)">
+          </label>
+          <label style="display:grid;gap:8px">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;color:rgba(232,235,234,.7)">E-MAIL</span>
+            <input value="{{ email }}" onChange="{{ setEmail }}" type="email" autoComplete="email" placeholder="voce@email.com" style="height:52px;padding:0 16px;background:#0b0d0e;color:#e8ebea;border:1px solid rgba(232,235,234,.2);font-family:inherit;font-size:16px;outline:none" style-focus="border-color:oklch(0.86 0.17 128)">
+          </label>
+          <div style="display:grid;gap:10px">
+            <span style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:.14em;color:rgba(232,235,234,.7)">SUA EXPERIÊNCIA COM DRONE</span>
+            <div style="display:flex;flex-wrap:wrap;gap:8px">
+              <sc-for list="{{ levels }}" as="lv" hint-placeholder-count="3">
+                <button type="button" onClick="{{ lv.pick }}" style="cursor:pointer;min-height:44px;padding:0 16px;background:{{ lv.bg }};color:{{ lv.fg }};border:1px solid {{ lv.border }};font-family:inherit;font-weight:600;font-size:14px">{{ lv.label }}</button>
+              </sc-for>
+            </div>
+          </div>
+          <span style="min-height:18px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.06em;color:oklch(0.75 0.17 30)">{{ error }}</span>
+          <button type="submit" style="cursor:pointer;height:56px;background:oklch(0.86 0.17 128);color:#0b0d0e;border:0;font-family:inherit;font-weight:800;font-size:16px;letter-spacing:.02em" style-hover="background:#e8ebea" disabled="{{ sending }}">{{ submitLabel }}</button>
+          <span style="font-size:13px;line-height:1.5;color:rgba(232,235,234,.6)">Seus dados chegam direto para a equipe Click Drone. Confirmamos sua vaga por e-mail ou WhatsApp.</span>
+        </form>
+      </sc-if>
+    </div>
+  </main>
+
+  <footer style="padding:32px clamp(20px,5vw,80px);border-top:1px solid rgba(232,235,234,.12);display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;font-family:'IBM Plex Mono',monospace;font-size:12px;letter-spacing:.1em;color:rgba(232,235,234,.6)">
+    <span>CLICK DRONE VIDEOS · SÃO PAULO</span>
+    <div style="display:flex;flex-wrap:wrap;gap:20px">
+      <a href="https://wa.me/5511926008082" target="_blank">(11) 92600-8082</a>
+      <a href="https://instagram.com/clickdronevideos" target="_blank">@CLICKDRONEVIDEOS</a>
+      <a href="mailto:clickdronevideos@gmail.com">CLICKDRONEVIDEOS@GMAIL.COM</a>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;web3formsKey&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Envio&quot;},&quot;date&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;05 DEZ 2026&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Evento&quot;},&quot;time&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;09h às 17h&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Evento&quot;},&quot;place&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;São Paulo, SP&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Evento&quot;}}">
+class Component extends DCLogic {
+  state = { name: '', phone: '', email: '', level: '', error: '', sent: false, sending: false };
+  waUrl() {
+    const s = this.state, p = this.props;
+    const msg = `Olá! Quero garantir minha vaga no curso de drone (${p.date || '05 DEZ 2026'}).\n\nNome: ${s.name}\nWhatsApp: ${s.phone}\nE-mail: ${s.email}\nExperiência: ${s.level}`;
+    return 'https://wa.me/5511926008082?text=' + encodeURIComponent(msg);
+  }
+  submit = e => {
+    e.preventDefault();
+    const s = this.state;
+    let error = '';
+    if (s.name.trim().length < 3) error = 'INFORME SEU NOME';
+    else if (s.phone.replace(/\D/g, '').length < 10) error = 'INFORME UM WHATSAPP COM DDD';
+    else if (!/^\S+@\S+\.\S+$/.test(s.email)) error = 'INFORME UM E-MAIL VÁLIDO';
+    else if (!s.level) error = 'ESCOLHA SUA EXPERIÊNCIA';
+    if (error) return this.setState({ error });
+    this.setState({ error: '', sending: true });
+    const key = (this.props.web3formsKey || '').trim();
+    const fields = { Nome: s.name, WhatsApp: s.phone, 'E-mail': s.email, Experiência: s.level };
+    const subject = 'Nova inscrição — Curso de drone ' + (this.props.date || '05 DEZ 2026');
+    const req = key
+      ? fetch('https://api.web3forms.com/submit', { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify({ access_key: key, subject, from_name: 'Site Click Drone', replyto: s.email, ...fields }) })
+      : fetch('https://formsubmit.co/ajax/clickdronevideos@gmail.com', { method: 'POST', headers: { 'Content-Type': 'application/json', Accept: 'application/json' }, body: JSON.stringify({ _subject: subject, _template: 'table', _captcha: 'false', _replyto: s.email, ...fields }) });
+    req.then(r => r.json()).then(d => {
+      if (d.success === false || d.success === 'false') throw new Error(d.message);
+      this.setState({ sending: false, sent: true });
+    }).catch(err => { console.warn('Envio falhou:', err && err.message); this.setState({ sending: false, error: 'NÃO FOI POSSÍVEL ENVIAR — TENTE DE NOVO' }); });
+  };
+  maskPhone(v) {
+    const d = v.replace(/\D/g, '').slice(0, 11);
+    if (d.length <= 2) return d ? '(' + d : '';
+    if (d.length <= 7) return `(${d.slice(0, 2)}) ${d.slice(2)}`;
+    return `(${d.slice(0, 2)}) ${d.slice(2, d.length - 4)}-${d.slice(-4)}`;
+  }
+  renderVals() {
+    const s = this.state, p = this.props, lime = 'oklch(0.86 0.17 128)';
+    const levels = ['Nunca voei', 'Já tenho drone', 'Já trabalho com drone'].map(label => {
+      const on = s.level === label;
+      return { label, bg: on ? lime : 'transparent', fg: on ? '#0b0d0e' : '#e8ebea', border: on ? lime : 'rgba(232,235,234,.25)', pick: () => this.setState({ level: label, error: '' }) };
+    });
+    return {
+      date: p.date || '05 DEZ 2026', time: p.time || '09h às 17h', place: p.place || 'São Paulo, SP',
+      name: s.name, phone: s.phone, email: s.email, error: s.error, levels,
+      sent: s.sent, notSent: !s.sent, firstName: s.name.trim().split(' ')[0], waUrl: this.waUrl(), sentMsg: 'Recebemos sua inscrição. Em breve entraremos em contato para confirmar sua vaga.', submitLabel: s.sending ? 'ENVIANDO…' : 'GARANTIR MINHA VAGA', sending: s.sending,
+      setName: e => this.setState({ name: e.target.value, error: '' }),
+      setPhone: e => this.setState({ phone: this.maskPhone(e.target.value), error: '' }),
+      setEmail: e => this.setState({ email: e.target.value, error: '' }),
+      submit: this.submit,
+      reset: () => this.setState({ name: '', phone: '', email: '', level: '', sent: false })
+    };
+  }
+}
+</script>
+</body>
+</html>
